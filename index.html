@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b3a">
+  <title>The Bridge Initiative | Building Connections, Creating Possibilities</title>
+  <meta name="description"
+    content="The Bridge Initiative connects young people, communities, ideas and opportunities through purpose-driven engagement, learning and collective action.">
+  <meta property="og:title" content="The Bridge Initiative">
+  <meta property="og:description" content="Building connections. Creating opportunities. Inspiring change.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/bridge-community.svg">
+  <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="./src/output.css" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="top"
+    class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-bridge-ink/95 text-white backdrop-blur-md">
+    <div class="container-wide flex min-h-[76px] items-center justify-between gap-5">
+      <a href="#home" class="flex items-center gap-3" aria-label="The Bridge Initiative home">
+        <span class="grid h-11 w-11 place-items-center border border-bridge-lime/70 text-bridge-lime"
+          aria-hidden="true">
+          <svg viewBox="0 0 40 40" class="h-7 w-7" fill="none">
+            <path d="M5 29V11h8v18M27 29V11h8v18M13 17h14M13 23h14M4 32h32" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="square" />
+            <circle cx="20" cy="8" r="2" fill="currentColor" />
+          </svg>
+        </span>
+        <span class="leading-tight"><span
+            class="block font-display text-sm font-extrabold tracking-wide sm:text-base">THE BRIDGE</span><span
+            class="block text-[10px] font-semibold uppercase tracking-[.24em] text-white/65">Initiative</span></span>
+      </a>
+      <button id="menu-toggle" class="grid h-11 w-11 place-items-center border border-white/25 md:hidden"
+        aria-expanded="false" aria-controls="site-menu" aria-label="Open navigation menu">
+        <svg id="menu-icon" viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
+      <nav id="site-menu"
+        class="absolute left-0 right-0 top-full hidden border-t border-white/10 bg-bridge-ink px-5 pb-6 pt-3 md:static md:flex md:items-center md:gap-6 md:border-0 md:bg-transparent md:p-0"
+        aria-label="Main navigation">
+        <a class="nav-link block py-3 text-sm text-white/80 hover:text-bridge-lime md:py-2" href="#home">Home</a>
+        <a class="nav-link block py-3 text-sm text-white/80 hover:text-bridge-lime md:py-2" href="#about">About Us</a>
+        <a class="nav-link block py-3 text-sm text-white/80 hover:text-bridge-lime md:py-2" href="#focus">Our Focus</a>
+        <a class="nav-link block py-3 text-sm text-white/80 hover:text-bridge-lime md:py-2" href="#impact">Our
+          Impact</a>
+        <a class="nav-link block py-3 text-sm text-white/80 hover:text-bridge-lime md:py-2"
+          href="#conference">Conference</a>
+        <a class="nav-link block py-3 text-sm text-white/80 hover:text-bridge-lime md:py-2" href="#contact">Contact</a>
+        <a href="#join"
+          class="mt-3 inline-flex min-h-11 items-center justify-center bg-bridge-lime px-4 text-sm font-extrabold text-bridge-ink transition hover:bg-white md:mt-0">Join
+          Our Community <span aria-hidden="true" class="ml-2">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home"
+      class="relative min-h-[720px] overflow-hidden bg-bridge-ink pt-[76px] text-white sm:min-h-[760px]">
+      <div id="hero-carousel" class="absolute inset-0" aria-roledescription="carousel" aria-label="Featured stories">
+        <article class="hero-slide is-active" data-slide="0" aria-hidden="false">
+          <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=2000&q=85"
+            alt="Young people gathered together at a learning and community event" fetchpriority="high">
+        </article>
+        <article class="hero-slide" data-slide="1" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=2000&q=85"
+            alt="Young adults collaborating and sharing ideas" loading="lazy">
+        </article>
+        <article class="hero-slide" data-slide="2" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=2000&q=85"
+            alt="Community members connecting in a welcoming group" loading="lazy">
+        </article>
+      </div>
+      <div class="container-wide relative z-10 flex min-h-[644px] items-center pb-20 pt-16 sm:min-h-[684px]">
+        <div class="hero-copy max-w-3xl">
+          <div
+            class="mb-7 inline-flex items-center gap-3 border border-white/30 bg-bridge-ink/35 px-4 py-2 text-[11px] font-extrabold uppercase tracking-[.18em]">
+            <span class="h-2 w-2 bg-bridge-lime"></span><span id="hero-kicker">Upcoming conference · 21 November
+              2026</span>
+          </div>
+          <p class="mb-4 max-w-xl text-sm font-semibold uppercase tracking-[.22em] text-bridge-lime" id="hero-overline">
+            Digital for Impact 1.0</p>
+          <h1 id="hero-title" class="max-w-4xl text-4xl font-extrabold leading-[1.05] sm:text-6xl lg:text-7xl">Leading,
+            Building, and Innovating in the Age of AI &amp; Blockchain</h1>
+          <p id="hero-description" class="mt-6 max-w-2xl text-base leading-7 text-white/80 sm:text-lg sm:leading-8">A
+            gathering to explore how emerging technologies can help us build, collaborate and create meaningful impact.
+          </p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a id="hero-primary" href="#conference" class="btn-primary">Explore the Conference <span
+                aria-hidden="true">↗</span></a>
+            <a href="#volunteer" class="btn-outline border-white/70 text-white">Volunteer With Us <span
+                aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-wide absolute inset-x-0 bottom-7 z-10 flex items-end justify-between gap-5">
+        <div class="flex items-center gap-2" role="group" aria-label="Choose featured slide">
+          <button class="slide-dot" data-go-slide="0" aria-label="Show conference slide" aria-current="true"></button>
+          <button class="slide-dot" data-go-slide="1" aria-label="Show our mission slide" aria-current="false"></button>
+          <button class="slide-dot" data-go-slide="2" aria-label="Show get involved slide"
+            aria-current="false"></button>
+        </div>
+        <div class="flex items-center gap-2">
+          <button id="carousel-pause"
+            class="hidden border border-white/35 px-3 py-2 text-xs font-bold text-white hover:bg-white/10 sm:block"
+            aria-pressed="false">Pause</button>
+          <button id="carousel-prev"
+            class="grid h-11 w-11 place-items-center border border-white/45 text-xl hover:bg-white hover:text-bridge-ink"
+            aria-label="Previous slide">←</button>
+          <button id="carousel-next"
+            class="grid h-11 w-11 place-items-center border border-white/45 text-xl hover:bg-white hover:text-bridge-ink"
+            aria-label="Next slide">→</button>
+        </div>
+      </div>
+      <div class="absolute bottom-0 left-0 h-1 w-full bg-white/15">
+        <div class="h-full w-1/3 bg-bridge-lime"></div>
+      </div>
+    </section>
+
+    <section class="border-b border-slate-200 bg-white py-5">
+      <div class="container-wide flex flex-col justify-between gap-4 text-sm sm:flex-row sm:items-center">
+        <p class="font-semibold text-bridge-muted">A community-centred initiative rooted in purpose and possibility.</p>
+        <a href="#conference"
+          class="inline-flex items-center gap-2 font-extrabold text-bridge-blue hover:text-bridge-teal">Discover Digital
+          for Impact 1.0 <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section id="about" class="section-pad bg-bridge-paper">
+      <div class="container-wide grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
+        <div class="reveal">
+          <span class="eyebrow text-bridge-blue">Who we are</span>
+          <h2 class="mt-6 max-w-xl text-4xl font-extrabold leading-tight sm:text-5xl">Building bridges between people
+            and possibility.</h2>
+          <p class="mt-6 max-w-xl text-lg leading-8 text-bridge-muted">The Bridge Initiative is a faith-based youth
+            platform creating room for conversations about God, life, purpose, relationships and culture—and exploring
+            ways young people can learn, connect and contribute to their communities.</p>
+          <p class="mt-4 max-w-xl leading-7 text-bridge-muted">We believe meaningful change grows when people are
+            equipped with knowledge, encouraged to ask better questions, and connected to opportunities to take action.
+          </p>
+          <a href="#our-story"
+            class="mt-8 inline-flex items-center gap-3 border-b-2 border-bridge-teal pb-2 font-extrabold hover:text-bridge-teal">Discover
+            our story <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="reveal relative">
+          <div class="absolute -left-4 -top-4 h-24 w-24 border-l-2 border-t-2 border-bridge-teal sm:-left-6 sm:-top-6">
+          </div>
+          <img class="relative aspect-[4/3] w-full object-cover"
+            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=85"
+            alt="A group of young people spending time and building community" loading="lazy">
+          <div class="relative -mt-10 ml-auto w-[82%] bg-bridge-ink p-6 text-white sm:p-8">
+            <p class="text-xs font-extrabold uppercase tracking-[.18em] text-bridge-lime">Our belief</p>
+            <p class="mt-3 text-xl font-bold leading-snug sm:text-2xl">The right connection can open a door. The right
+              opportunity can change a direction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="our-story" class="section-pad bg-white">
+      <div class="container-wide">
+        <div class="grid gap-8 border-b border-slate-200 pb-12 md:grid-cols-[.7fr_1.3fr]">
+          <div class="reveal"><span class="eyebrow text-bridge-blue">Our story &amp; purpose</span></div>
+          <div class="reveal">
+            <h2 class="max-w-3xl text-3xl font-extrabold leading-tight sm:text-4xl">A place for purpose-driven
+              conversations—and practical action.</h2>
+            <p class="mt-5 max-w-3xl leading-8 text-bridge-muted">The Bridge Initiative began as a platform for engaging
+              young people around the questions that shape life. Today, our work includes youth engagement and digital
+              learning initiatives designed to help young people encounter ideas, explore possibilities and take steps
+              toward a more purposeful future.</p>
+          </div>
+        </div>
+        <div class="grid gap-px bg-slate-200 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="reveal bg-white p-7 sm:p-8"><span
+              class="text-xs font-extrabold uppercase tracking-[.15em] text-bridge-teal">01 / Mission</span>
+            <h3 class="mt-5 text-xl font-extrabold">Our purpose</h3>
+            <p class="mt-3 text-sm leading-7 text-bridge-muted">To create spaces where young people can explore ideas,
+              engage with different perspectives, deepen their understanding of faith and life, and discover
+              possibilities for personal growth and community impact.</p><span
+              class="mt-5 inline-block border-b border-bridge-teal pb-1 text-xs font-bold text-bridge-blue">Editable
+              draft placeholder</span>
+          </article>
+          <article class="reveal bg-white p-7 sm:p-8"><span
+              class="text-xs font-extrabold uppercase tracking-[.15em] text-bridge-teal">02 / Vision</span>
+            <h3 class="mt-5 text-xl font-extrabold">The future we seek</h3>
+            <p class="mt-3 text-sm leading-7 text-bridge-muted">Ultimately, we seek a future where young people are not
+              merely observers of change but active participants in shaping it—building bridges between people, ideas,
+              and possibilities for a better future.</p><span
+              class="mt-5 inline-block border-b border-bridge-teal pb-1 text-xs font-bold text-bridge-blue">Editable
+              draft placeholder</span>
+          </article>
+          <article class="reveal bg-white p-7 sm:p-8"><span
+              class="text-xs font-extrabold uppercase tracking-[.15em] text-bridge-teal">03 / Values</span>
+            <h3 class="mt-5 text-xl font-extrabold">How we work</h3>
+            <p class="mt-3 text-sm leading-7 text-bridge-muted">We create opportunities for young people to engage in
+              meaningful conversations, explore important questions, share experiences, and learn from different
+              perspectives.</p><span
+              class="mt-5 inline-block border-b border-bridge-teal pb-1 text-xs font-bold text-bridge-blue">Editable
+              draft placeholder</span>
+          </article>
+          <article class="reveal bg-white p-7 sm:p-8"><span
+              class="text-xs font-extrabold uppercase tracking-[.15em] text-bridge-teal">04 / Approach</span>
+            <h3 class="mt-5 text-xl font-extrabold">Learn, connect, act</h3>
+            <p class="mt-3 text-sm leading-7 text-bridge-muted">We create space for learning, conversation,
+              collaboration and community participation.</p><span
+              class="mt-5 inline-block border-b border-bridge-teal pb-1 text-xs font-bold text-bridge-blue">Working
+              description</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus" class="section-pad bg-[#edf2ef]">
+      <div class="container-wide">
+        <div class="flex flex-col justify-between gap-5 md:flex-row md:items-end">
+          <div class="reveal max-w-2xl"><span class="eyebrow text-bridge-blue">Where we focus</span>
+            <h2 class="mt-5 text-4xl font-extrabold sm:text-5xl">Ideas that move people forward.</h2>
+          </div>
+          <p class="reveal max-w-md leading-7 text-bridge-muted">These are the themes reflected in our work and current
+            direction. Formal programme names and descriptions can be updated as initiatives are confirmed.</p>
+        </div>
+        <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <article class="focus-card reveal border border-slate-200 bg-white p-7 sm:p-8">
+            <div class="flex h-12 w-12 items-center justify-center border border-bridge-teal text-bridge-teal"><svg
+                viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="8" r="3" />
+                <path d="M5 20v-2a7 7 0 0 1 14 0v2M4 4l2 2m14-2-2 2" />
+              </svg></div>
+            <h3 class="mt-6 text-xl font-extrabold">Youth &amp; Purpose</h3>
+            <p class="mt-3 leading-7 text-bridge-muted">Creating space for young people to reflect on purpose,
+              relationships, culture and the choices that shape their lives.</p><span
+              class="mt-5 inline-block text-xs font-extrabold uppercase tracking-wider text-bridge-teal">Community
+              engagement</span>
+          </article>
+          <article class="focus-card reveal border border-slate-200 bg-white p-7 sm:p-8">
+            <div class="flex h-12 w-12 items-center justify-center border border-bridge-teal text-bridge-teal"><svg
+                viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="3" y="4" width="18" height="13" rx="1" />
+                <path d="M8 21h8m-4-4v4M7 9l3 3 6-5" />
+              </svg></div>
+            <h3 class="mt-6 text-xl font-extrabold">Digital Learning</h3>
+            <p class="mt-3 leading-7 text-bridge-muted">Exploring digital literacy, emerging technology and learning
+              opportunities that can help young people prepare for tomorrow.</p><span
+              class="mt-5 inline-block text-xs font-extrabold uppercase tracking-wider text-bridge-teal">Learning &amp;
+              innovation</span>
+          </article>
+          <article class="focus-card reveal border border-slate-200 bg-white p-7 sm:p-8">
+            <div class="flex h-12 w-12 items-center justify-center border border-bridge-teal text-bridge-teal"><svg
+                viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M12 3v18M3 12h18M5.5 5.5l13 13m0-13-13 13" />
+                <circle cx="12" cy="12" r="8.5" />
+              </svg></div>
+            <h3 class="mt-6 text-xl font-extrabold">Community &amp; Collaboration</h3>
+            <p class="mt-3 leading-7 text-bridge-muted">Bringing people and perspectives together to share knowledge,
+              strengthen connections and work toward common good.</p><span
+              class="mt-5 inline-block text-xs font-extrabold uppercase tracking-wider text-bridge-teal">Collective
+              action</span>
+          </article>
+        </div>
+        <p class="mt-5 text-xs text-bridge-muted">Note: These are descriptive focus themes, not a complete or formally
+          approved programme list.</p>
+      </div>
+    </section>
+
+    <section id="impact" class="section-pad bg-bridge-ink text-white">
+      <div class="container-wide grid gap-12 lg:grid-cols-[.85fr_1.15fr]">
+        <div class="reveal"><span class="eyebrow text-bridge-lime">Our impact</span>
+          <h2 class="mt-5 text-4xl font-extrabold leading-tight sm:text-5xl">Impact is more than a number.</h2>
+          <p class="mt-6 max-w-lg leading-8 text-white/70">It is a young person who discovers a new possibility, a
+            community that gains access to useful knowledge, and people who find a reason to work together. We are
+            committed to telling our story with honesty and showing progress with evidence.</p><a href="#contact"
+            class="mt-8 inline-flex items-center gap-3 border-b border-bridge-lime pb-2 font-bold text-bridge-lime hover:text-white">Share
+            a story or collaborate <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="grid gap-px self-center bg-white/15 sm:grid-cols-2">
+          <article class="reveal bg-bridge-ink p-7 sm:p-8"><span
+              class="text-sm font-extrabold text-bridge-lime">01</span>
+            <h3 class="mt-6 text-xl font-extrabold">Community stories</h3>
+            <p class="mt-3 text-sm leading-7 text-white/65">Add verified stories that show how people have participated,
+              learned or grown through the initiative.</p>
+          </article>
+          <article class="reveal bg-bridge-ink p-7 sm:p-8"><span
+              class="text-sm font-extrabold text-bridge-lime">02</span>
+            <h3 class="mt-6 text-xl font-extrabold">Project highlights</h3>
+            <p class="mt-3 text-sm leading-7 text-white/65">Document workshops, school visits, conversations and
+              projects with dates and supporting evidence.</p>
+          </article>
+          <article class="reveal bg-bridge-ink p-7 sm:p-8"><span
+              class="text-sm font-extrabold text-bridge-lime">03</span>
+            <h3 class="mt-6 text-xl font-extrabold">Milestones</h3>
+            <p class="mt-3 text-sm leading-7 text-white/65">Show important steps, partnerships and lessons learned as
+              they are confirmed.</p>
+          </article>
+          <article class="reveal bg-bridge-ink p-7 sm:p-8"><span
+              class="text-sm font-extrabold text-bridge-lime">04</span>
+            <h3 class="mt-6 text-xl font-extrabold">Measured outcomes</h3>
+            <p class="mt-3 text-sm leading-7 text-white/65">Publish meaningful results when reliable records are
+              available—without inflated claims.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="conference" class="section-pad bg-white">
+      <div class="container-wide">
+        <div class="grid gap-10 lg:grid-cols-[1fr_.95fr] lg:items-center">
+          <div class="reveal">
+            <span class="eyebrow text-bridge-blue">Featured event</span>
+            <p class="mt-6 text-xs font-extrabold uppercase tracking-[.2em] text-bridge-teal">The Bridge Initiative
+              presents</p>
+            <h2 class="mt-3 text-4xl font-extrabold leading-tight sm:text-6xl">DIGITAL FOR IMPACT <span
+                class="text-bridge-teal">1.0</span></h2>
+            <p class="mt-4 text-xl font-semibold leading-relaxed">Leading, Building, and Innovating in the Age of AI
+              &amp; Blockchain</p>
+            <p class="mt-5 leading-8 text-bridge-muted">A conference exploring digital transformation and the
+              possibilities emerging technologies create for learning, innovation, leadership and shared progress.</p>
+            <div class="mt-8 grid gap-5 border-y border-slate-200 py-6 sm:grid-cols-2">
+              <div>
+                <p class="text-xs font-extrabold uppercase tracking-[.14em] text-bridge-muted">Date &amp; time</p>
+                <p class="mt-2 font-extrabold">Saturday, 21 November 2026</p>
+                <p class="text-sm text-bridge-muted">11:00 AM</p>
+              </div>
+              <div>
+                <p class="text-xs font-extrabold uppercase tracking-[.14em] text-bridge-muted">Venue</p>
+                <p class="mt-2 font-extrabold">RCN Tent</p>
+                <p class="text-sm leading-6 text-bridge-muted">465 Zik Avenue, Agu-Awka, by Ring Road Roundabout</p>
+              </div>
+            </div>
+            <div class="mt-7 flex flex-col gap-3 sm:flex-row"><a href="#volunteer" class="btn-primary">Volunteer for the
+                Conference <span aria-hidden="true">↗</span></a><a href="#contact" class="btn-outline">Ask a Question
+                <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <div class="reveal relative">
+            <img class="aspect-[4/5] w-full object-cover"
+              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1200&q=85"
+              alt="Conference venue set up for a gathering of participants" loading="lazy">
+            <div
+              class="absolute bottom-5 left-5 right-5 bg-bridge-ink/95 p-6 text-white sm:bottom-8 sm:left-8 sm:right-8 sm:p-8">
+              <p class="text-xs font-extrabold uppercase tracking-[.17em] text-bridge-lime">The conversation starts here
+              </p>
+              <p class="mt-3 text-2xl font-extrabold">Technology. People. Possibility.</p>
+              <p class="mt-2 text-sm leading-6 text-white/70">Join a day of ideas and dialogue about building a more
+                innovative and inclusive future.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 border-t border-slate-200 pt-7">
+          <p class="text-xs font-extrabold uppercase tracking-[.16em] text-bridge-muted">In collaboration with</p>
+          <div class="mt-4 flex flex-wrap gap-x-8 gap-y-3 text-sm font-extrabold text-bridge-ink"><span>Kodex
+              Africa</span><span>RCN Anambra</span><span>Anambra Web3 Community</span></div>
+          <p class="mt-3 text-xs text-bridge-muted">Partner names shown from current event information; confirm branding
+            and logo-use permissions before publication.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="section-pad pattern-grid bg-[#edf2ef]">
+      <div class="container-wide grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
+        <div class="reveal">
+          <span class="eyebrow text-bridge-blue">Join our community</span>
+          <h2 class="mt-5 text-4xl font-extrabold leading-tight sm:text-5xl">There is room for you in the bridge we are
+            building.</h2>
+          <p class="mt-6 leading-8 text-bridge-muted">If you care about young people, learning, community, purpose or
+            positive change, tell us a little about yourself and how you would like to connect.</p>
+          <div class="mt-8 space-y-4">
+            <div class="flex gap-3"><span
+                class="mt-1 grid h-6 w-6 shrink-0 place-items-center bg-bridge-teal text-sm font-bold text-white">✓</span>
+              <p class="text-sm leading-6 text-bridge-muted">Share your interests and areas of experience.</p>
+            </div>
+            <div class="flex gap-3"><span
+                class="mt-1 grid h-6 w-6 shrink-0 place-items-center bg-bridge-teal text-sm font-bold text-white">✓</span>
+              <p class="text-sm leading-6 text-bridge-muted">Express interest in volunteering, learning or
+                collaboration.</p>
+            </div>
+            <div class="flex gap-3"><span
+                class="mt-1 grid h-6 w-6 shrink-0 place-items-center bg-bridge-teal text-sm font-bold text-white">✓</span>
+              <p class="text-sm leading-6 text-bridge-muted">Help shape opportunities that respond to real community
+                needs.</p>
+            </div>
+          </div>
+        </div>
+        <form class="submit-form reveal bg-white p-6 shadow-sm sm:p-9" data-google-form
+          data-form-name="Community interest" novalidate>
+          <div class="mb-7 flex items-start justify-between gap-4">
+            <div>
+              <h3 class="text-2xl font-extrabold">Join the community</h3>
+              <p class="mt-2 text-sm text-bridge-muted">Fields marked * are required.</p>
+            </div><span
+              class="border border-bridge-teal px-2 py-1 text-[10px] font-extrabold uppercase tracking-wider text-bridge-teal">Interest
+              form</span>
+          </div>
+          <div class="grid gap-5 sm:grid-cols-2">
+            <div><label for="join-name" class="mb-2 block text-sm font-bold">Full name *</label><input id="join-name"
+                name="name" class="field" autocomplete="name" required></div>
+            <div><label for="join-email" class="mb-2 block text-sm font-bold">Email address *</label><input
+                id="join-email" name="email" type="email" class="field" autocomplete="email" required></div>
+            <div><label for="join-phone" class="mb-2 block text-sm font-bold">Phone number <span
+                  class="font-normal text-bridge-muted">(optional)</span></label><input id="join-phone" name="phone"
+                type="tel" class="field" autocomplete="tel"></div>
+            <div><label for="join-org" class="mb-2 block text-sm font-bold">Organization / institution</label><input
+                id="join-org" name="organization" class="field" autocomplete="organization"></div>
+            <div><label for="join-interest" class="mb-2 block text-sm font-bold">Area of interest *</label><select
+                id="join-interest" name="interest" class="field" required>
+                <option value="">Choose an area</option>
+                <option>Youth and purpose</option>
+                <option>Digital learning and innovation</option>
+                <option>Community engagement</option>
+                <option>Education and schools</option>
+                <option>Partnerships and collaboration</option>
+                <option>Other</option>
+              </select></div>
+            <div><label for="join-contribution" class="mb-2 block text-sm font-bold">How would you like to contribute?
+                *</label><select id="join-contribution" name="contribution" class="field" required>
+                <option value="">Choose an option</option>
+                <option>Volunteering</option>
+                <option>Community participation</option>
+                <option>Professional expertise</option>
+                <option>Partnership</option>
+                <option>Advocacy</option>
+                <option>Supporting initiatives</option>
+                <option>Other</option>
+              </select></div>
+            <div class="sm:col-span-2"><label for="join-message" class="mb-2 block text-sm font-bold">A little about you
+                <span class="font-normal text-bridge-muted">(optional)</span></label><textarea id="join-message"
+                name="message" rows="3" class="field"
+                placeholder="Tell us what you care about or hope to contribute."></textarea></div>
+            <div class="sm:col-span-2"><label class="flex items-start gap-3 text-sm leading-6 text-bridge-muted"><input
+                  name="consent" type="checkbox" required class="mt-1 h-4 w-4 accent-bridge-teal"><span>I consent to the
+                  information being used for the purpose explained in the <a href="#privacy"
+                    class="font-bold text-bridge-blue underline">privacy notice</a>.
+                  *</span></label></div>
+          </div>
+          <div class="form-status mt-5 text-sm" data-form-status role="status" aria-live="polite"></div>
+          <button type="submit" class="btn-primary mt-6 w-full">Send interest <span aria-hidden="true">↗</span></button>
+        </form>
+      </div>
+    </section>
+
+    <section id="volunteer" class="section-pad bg-white">
+      <div class="container-wide grid gap-12 lg:grid-cols-[.75fr_1.25fr]">
+        <div class="reveal">
+          <span class="eyebrow text-bridge-blue">Conference volunteer team</span>
+          <h2 class="mt-5 text-4xl font-extrabold leading-tight sm:text-5xl">Be part of the experience.</h2>
+          <p class="mt-6 leading-8 text-bridge-muted">Help create a thoughtful, welcoming experience for participants at
+            Digital for Impact 1.0. Tell us where your skills and availability may fit.</p>
+          <div class="mt-8 border-l-2 border-bridge-teal pl-5">
+            <p class="font-extrabold">Conference date</p>
+            <p class="mt-1 text-sm text-bridge-muted">21 November 2026 · 11:00 AM</p>
+          </div>
+          <p class="mt-5 text-sm leading-6 text-bridge-muted">Volunteer roles and placements are subject to confirmation
+            by the organizing team.</p>
+        </div>
+        <form class="submit-form reveal border border-slate-200 p-6 sm:p-9" data-google-form
+          data-form-name="Conference volunteer" novalidate>
+          <div class="mb-7">
+            <h3 class="text-2xl font-extrabold">Volunteer interest</h3>
+            <p class="mt-2 text-sm text-bridge-muted">Share your details and preferred way to help.</p>
+          </div>
+          <div class="grid gap-5 sm:grid-cols-2">
+            <div><label for="vol-name" class="mb-2 block text-sm font-bold">Full name *</label><input id="vol-name"
+                name="name" class="field" autocomplete="name" required></div>
+            <div><label for="vol-email" class="mb-2 block text-sm font-bold">Email address *</label><input
+                id="vol-email" name="email" type="email" class="field" autocomplete="email" required></div>
+            <div><label for="vol-phone" class="mb-2 block text-sm font-bold">Phone number *</label><input id="vol-phone"
+                name="phone" type="tel" class="field" autocomplete="tel" required></div>
+            <div><label for="vol-org" class="mb-2 block text-sm font-bold">Organization / school</label><input
+                id="vol-org" name="organization" class="field" autocomplete="organization"></div>
+            <div><label for="vol-role" class="mb-2 block text-sm font-bold">Preferred volunteer role *</label><select
+                id="vol-role" name="role" class="field" required>
+                <option value="">Choose a role</option>
+                <option>Guest reception and registration</option>
+                <option>Event logistics</option>
+                <option>Guest support</option>
+                <option>Communications and media</option>
+                <option>Photography and content support</option>
+                <option>Technical support</option>
+                <option>General event assistance</option>
+                <option>Open to assignment</option>
+              </select></div>
+            <div><label for="vol-availability" class="mb-2 block text-sm font-bold">Availability *</label><select
+                id="vol-availability" name="availability" class="field" required>
+                <option value="">Choose availability</option>
+                <option>Before the event</option>
+                <option>Event day</option>
+                <option>Before and on event day</option>
+                <option>Discuss with me</option>
+              </select></div>
+            <div class="sm:col-span-2"><label for="vol-skills" class="mb-2 block text-sm font-bold">Relevant skills or
+                experience *</label><textarea id="vol-skills" name="skills" rows="3" class="field" required
+                placeholder="e.g. guest support, design, media, logistics, technical support"></textarea></div>
+            <div class="sm:col-span-2"><label for="vol-experience" class="mb-2 block text-sm font-bold">Previous
+                volunteering experience <span class="font-normal text-bridge-muted">(optional)</span></label><textarea
+                id="vol-experience" name="experience" rows="2" class="field"></textarea></div>
+            <div class="sm:col-span-2"><label for="vol-motivation" class="mb-2 block text-sm font-bold">Why would you
+                like to volunteer? *</label><textarea id="vol-motivation" name="motivation" rows="3" class="field"
+                required></textarea></div>
+            <div class="sm:col-span-2"><label class="flex items-start gap-3 text-sm leading-6 text-bridge-muted"><input
+                  name="consent" type="checkbox" required class="mt-1 h-4 w-4 accent-bridge-teal"><span>I consent to the
+                  information being used as described in the <a href="#privacy"
+                    class="font-bold text-bridge-blue underline">privacy notice</a>. *</span></label></div>
+          </div>
+          <div class="form-status mt-5 text-sm" data-form-status role="status" aria-live="polite"></div>
+          <button type="submit" class="btn-primary mt-6 w-full">Express volunteer interest <span
+              aria-hidden="true">↗</span></button>
+        </form>
+      </div>
+    </section>
+
+    <section id="get-involved" class="bg-bridge-lime py-16 sm:py-20">
+      <div class="container-wide flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
+        <div class="max-w-2xl">
+          <p class="text-xs font-extrabold uppercase tracking-[.18em] text-bridge-blue">Get involved</p>
+          <h2 class="mt-4 text-3xl font-extrabold leading-tight sm:text-5xl">A stronger bridge is built together.</h2>
+          <p class="mt-4 max-w-xl leading-7 text-bridge-ink/75">Bring your curiosity, your skills, your questions or
+            your willingness to serve. Start a conversation with us.</p>
+        </div>
+        <div class="flex w-full flex-col gap-3 sm:w-auto sm:flex-row"><a href="#join"
+            class="btn-primary border-bridge-ink bg-bridge-ink text-white hover:bg-bridge-blue">Join the community <span
+              aria-hidden="true">↗</span></a><a href="#contact" class="btn-outline border-bridge-ink">Partner with us
+            <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section id="stories" class="section-pad bg-bridge-paper">
+      <div class="container-wide">
+        <div class="flex flex-col justify-between gap-5 md:flex-row md:items-end">
+          <div class="reveal"><span class="eyebrow text-bridge-blue">Stories &amp; updates</span>
+            <h2 class="mt-5 text-4xl font-extrabold sm:text-5xl">The work, as it unfolds.</h2>
+          </div>
+          <p class="reveal max-w-md leading-7 text-bridge-muted">A space for verified updates, project highlights and
+            reflections from our community.</p>
+        </div>
+        <div class="mt-10 grid gap-5 md:grid-cols-3">
+          <article class="reveal border border-slate-200 bg-white">
+            <div class="flex aspect-[16/9] items-center justify-center bg-[#dce8e4] text-bridge-blue"><svg
+                viewBox="0 0 100 70" class="h-16 w-24" fill="none" stroke="currentColor" stroke-width="1.4">
+                <path d="M10 55h80M18 55V18h64v37M30 18V9h40v9M30 30h40M30 39h40M30 48h22" />
+              </svg></div>
+            <div class="p-6">
+              <p class="text-xs font-extrabold uppercase tracking-wider text-bridge-teal">Community update</p>
+              <h3 class="mt-3 text-xl font-extrabold">Share a project highlight</h3>
+              <p class="mt-3 text-sm leading-7 text-bridge-muted">Use this space for a verified update, event recap
+                or project milestone from the Bridge Initiative.</p>
+            </div>
+          </article>
+          <article class="reveal border border-slate-200 bg-white">
+            <div class="flex aspect-[16/9] items-center justify-center bg-[#e9edc9] text-bridge-blue"><svg
+                viewBox="0 0 100 70" class="h-16 w-24" fill="none" stroke="currentColor" stroke-width="1.4">
+                <circle cx="35" cy="25" r="9" />
+                <circle cx="65" cy="25" r="9" />
+                <path d="M17 58v-6a18 18 0 0 1 36 0v6M47 58v-6a18 18 0 0 1 36 0v6" />
+              </svg></div>
+            <div class="p-6">
+              <p class="text-xs font-extrabold uppercase tracking-wider text-bridge-teal">Community story</p>
+              <h3 class="mt-3 text-xl font-extrabold">Put people at the centre</h3>
+              <p class="mt-3 text-sm leading-7 text-bridge-muted">Add a story with permission from the people featured
+                and a clear account of what happened.</p>
+            </div>
+          </article>
+          <article class="reveal border border-slate-200 bg-white">
+            <div class="flex aspect-[16/9] items-center justify-center bg-[#dbe6ed] text-bridge-blue"><svg
+                viewBox="0 0 100 70" class="h-16 w-24" fill="none" stroke="currentColor" stroke-width="1.4">
+                <path d="M15 55V16h70v39M25 26h50M25 36h50M25 46h28" />
+                <path d="m63 48 7 7 14-17" />
+              </svg></div>
+            <div class="p-6">
+              <p class="text-xs font-extrabold uppercase tracking-wider text-bridge-teal">Learning note</p>
+              <h3 class="mt-3 text-xl font-extrabold">Document what we learn</h3>
+              <p class="mt-3 text-sm leading-7 text-bridge-muted">Use this space for lessons, useful resources and
+                insights from real activities.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-pad bg-white">
+      <div class="container-wide grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
+        <div class="reveal">
+          <span class="eyebrow text-bridge-blue">Contact us</span>
+          <h2 class="mt-5 text-4xl font-extrabold leading-tight sm:text-5xl">Let's start a conversation.</h2>
+          <p class="mt-5 max-w-lg leading-8 text-bridge-muted">Have a question, an idea, or an interest in
+            collaborating? Reach out and tell us what you have in mind.</p>
+          <div class="mt-8 border-t border-slate-200 pt-6">
+            <p class="text-xs font-extrabold uppercase tracking-[.15em] text-bridge-muted">Email</p>
+            <a href="mailto:thebridgeinitiative6@gmail.com"
+              class="mt-2 inline-block text-lg font-extrabold text-bridge-blue hover:text-bridge-teal">thebridgeinitiative6@gmail.com</a>
+          </div>
+          <div class="mt-6 border-t border-slate-200 pt-6">
+            <p class="text-xs font-extrabold uppercase tracking-[.15em] text-bridge-muted">Based in</p>
+            <p class="mt-2 font-bold">Awka, Anambra State, Nigeria</p>
+            <p class="mt-1 text-sm text-bridge-muted">Add an official office address or phone number here if applicable.
+            </p>
+          </div>
+        </div>
+        <form class="submit-form reveal bg-bridge-paper p-6 sm:p-9" data-mail-form data-form-name="Contact" novalidate>
+          <h3 class="text-2xl font-extrabold">Send us a message</h3>
+          <p class="mt-2 text-sm text-bridge-muted">All fields are required.</p>
+          <div class="mt-6 grid gap-5 sm:grid-cols-2">
+            <div><label for="contact-name" class="mb-2 block text-sm font-bold">Name *</label><input id="contact-name"
+                name="name" class="field" autocomplete="name" required></div>
+            <div><label for="contact-email" class="mb-2 block text-sm font-bold">Email *</label><input
+                id="contact-email" name="email" type="email" class="field" autocomplete="email" required></div>
+            <div class="sm:col-span-2"><label for="contact-subject" class="mb-2 block text-sm font-bold">Subject
+                *</label><input id="contact-subject" name="subject" class="field" required></div>
+            <div class="sm:col-span-2"><label for="contact-message" class="mb-2 block text-sm font-bold">Message
+                *</label><textarea id="contact-message" name="message" rows="5" class="field" required></textarea></div>
+          </div>
+          <div class="form-status mt-5 text-sm" data-form-status role="status" aria-live="polite"></div>
+          <button type="submit" data-action="prepare-message" class="btn-primary mt-6 w-full">Prepare message <span
+              aria-hidden="true">↗</span></button>
+        </form>
+      </div>
+    </section>
+
+    <section id="privacy" class="border-t border-slate-200 bg-bridge-paper py-8">
+      <div class="container-wide">
+        <h2 class="text-sm font-extrabold">Privacy notice</h2>
+        <p class="mt-2 max-w-4xl text-sm leading-6 text-bridge-muted">Please do not submit sensitive personal
+          information unless it is necessary for your request. We will only use submitted information for the purposes
+          you have indicated, and we will store or process it in accordance with the approved privacy arrangements for
+          this website and the connected Google Sheets workflow.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-bridge-ink py-12 text-white">
+    <div class="container-wide">
+      <div class="grid gap-10 border-b border-white/15 pb-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_.8fr_.8fr]">
+        <div><a href="#home" class="inline-flex items-center gap-3"><span
+              class="grid h-10 w-10 place-items-center border border-bridge-lime text-bridge-lime"
+              aria-hidden="true">B</span><span class="font-extrabold tracking-wide">THE BRIDGE INITIATIVE</span></a>
+          <p class="mt-5 max-w-sm text-sm leading-7 text-white/65">Connecting people, ideas and opportunities through
+            purpose-driven engagement, learning and collective action.</p><a href="#join"
+            class="mt-6 inline-flex items-center gap-2 font-bold text-bridge-lime hover:text-white">Join our community
+            <span aria-hidden="true">↗</span></a>
+        </div>
+        <div>
+          <h2 class="text-sm font-extrabold uppercase tracking-wider text-bridge-lime">Explore</h2>
+          <ul class="mt-5 space-y-3 text-sm text-white/70">
+            <li><a class="hover:text-white" href="#about">About us</a></li>
+            <li><a class="hover:text-white" href="#focus">Our focus</a></li>
+            <li><a class="hover:text-white" href="#impact">Our impact</a></li>
+            <li><a class="hover:text-white" href="#stories">Stories &amp; updates</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-sm font-extrabold uppercase tracking-wider text-bridge-lime">Take part</h2>
+          <ul class="mt-5 space-y-3 text-sm text-white/70">
+            <li><a class="hover:text-white" href="#conference">Digital for Impact 1.0</a></li>
+            <li><a class="hover:text-white" href="#volunteer">Volunteer</a></li>
+            <li><a class="hover:text-white" href="#contact">Contact us</a></li>
+            <li><a class="hover:text-white" href="#privacy">Privacy notice</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col justify-between gap-3 pt-6 text-xs text-white/50 sm:flex-row">
+        <p>© <span id="current-year"></span> The Bridge Initiative. All rights reserved.</p>
+        <p>Built to connect people with possibility.</p>
+      </div>
+    </div>
+  </footer>
+  <button id="back-to-top"
+    class="fixed bottom-5 right-5 z-40 hidden h-12 w-12 border border-white/20 bg-bridge-ink text-xl text-white shadow-lg hover:bg-bridge-teal"
+    aria-label="Back to top">↑</button>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="./config.local.js"></script>
+  <script src="./form-handler.js" defer></script>
+  <script src="./src/main.js" defer></script>
+</body>
+
+</html>

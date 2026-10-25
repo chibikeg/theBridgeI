@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">The Bridge Initiative</title>
+  <desc id="desc">A community themed graphic featuring abstract bridge shapes and people silhouettes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#102b3a"/>
+      <stop offset="100%" stop-color="#1d4755"/>
+    </linearGradient>
+    <linearGradient id="lime" x1="0" x2="1">
+      <stop offset="0%" stop-color="#d7e66b"/>
+      <stop offset="100%" stop-color="#a8c642"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1040" cy="120" r="200" fill="#1e5768" opacity="0.35"/>
+  <circle cx="180" cy="540" r="260" fill="#d7e66b" opacity="0.12"/>
+
+  <g fill="none" stroke="#d7e66b" stroke-width="10" stroke-linecap="square" opacity="0.95">
+    <path d="M150 470V220h130v250M510 470V220h130v250M790 470V220h130v250"/>
+    <path d="M280 300h230M280 370h230M920 300h110M920 370h110"/>
+    <path d="M160 470h520M790 470h260"/>
+  </g>
+
+  <g fill="#d7e66b" opacity="0.9">
+    <circle cx="470" cy="160" r="18"/>
+    <circle cx="650" cy="160" r="18"/>
+    <circle cx="910" cy="160" r="18"/>
+    <path d="M430 210c18-36 64-60 106-60 42 0 89 24 106 60H430zm210 0c18-36 64-60 106-60 42 0 89 24 106 60H640zm-160 0h400v42H480z"/>
+  </g>
+
+  <g fill="url(#lime)">
+    <path d="M250 570h700v18H250z"/>
+  </g>
+
+  <g fill="#ffffff" font-family="Arial, Helvetica, sans-serif">
+    <text x="120" y="120" font-size="26" font-weight="700" letter-spacing="7" fill="#d7e66b">THE BRIDGE INITIATIVE</text>
+    <text x="120" y="338" font-size="72" font-weight="800">Building bridges</text>
+    <text x="120" y="418" font-size="72" font-weight="800">between people</text>
+    <text x="120" y="498" font-size="72" font-weight="800">and possibility.</text>
+  </g>
+</svg>

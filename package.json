@@ -1,0 +1,19 @@
+{
+  "name": "bridge-initiative-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static official website for The Bridge Initiative",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

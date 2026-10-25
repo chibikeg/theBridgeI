@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* The Bridge Initiative — editable brand tokens */
+@theme {
+  --color-bridge-ink: #102b3a;
+  --color-bridge-blue: #145b78;
+  --color-bridge-teal: #1b8b87;
+  --color-bridge-lime: #d7e66b;
+  --color-bridge-paper: #f7f7f2;
+  --color-bridge-muted: #667780;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Manrope", "DM Sans", ui-sans-serif, sans-serif;
+}
+
+:root { color-scheme: light; scroll-behavior: smooth; }
+html { scroll-padding-top: 6rem; }
+body { font-family: "DM Sans", sans-serif; color: #102b3a; background: #f7f7f2; }
+h1,h2,h3,h4 { font-family: "Manrope", sans-serif; letter-spacing: -0.035em; }
+::selection { background: #d7e66b; color: #102b3a; }
+:focus-visible { outline: 3px solid #1b8b87; outline-offset: 3px; }
+.container-wide { width: min(100% - 2.5rem, 1240px); margin-inline: auto; }
+.section-pad { padding-block: clamp(4.5rem, 8vw, 7.5rem); }
+.eyebrow { display: inline-flex; align-items: center; gap: .65rem; font-size: .72rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.eyebrow::before { content: ""; display: inline-block; width: 1.75rem; height: 2px; background: #1b8b87; }
+.btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: .65rem; min-height: 3.1rem; padding: .85rem 1.25rem; background: #d7e66b; color: #102b3a; font-weight: 800; border: 1px solid #d7e66b; transition: transform .2s ease, background .2s ease; }
+.btn-primary:hover { background: #e5ef9c; transform: translateY(-2px); }
+.btn-outline { display: inline-flex; align-items: center; justify-content: center; gap: .65rem; min-height: 3.1rem; padding: .85rem 1.25rem; color: inherit; font-weight: 700; border: 1px solid currentColor; transition: background .2s ease, color .2s ease; }
+.btn-outline:hover { background: #102b3a; color: white; }
+.dark .btn-outline:hover { background: white; color: #102b3a; }
+.hero-slide { position: absolute; inset: 0; opacity: 0; visibility: hidden; transition: opacity .75s ease, visibility .75s ease; }
+.hero-slide.is-active { opacity: 1; visibility: visible; }
+.hero-slide img { width: 100%; height: 100%; object-fit: cover; }
+.hero-slide::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8,28,39,.9) 0%, rgba(8,28,39,.72) 42%, rgba(8,28,39,.18) 100%), linear-gradient(0deg, rgba(8,28,39,.36), transparent 50%); }
+.hero-copy { position: relative; z-index: 1; }
+.slide-dot { width: 2rem; height: .25rem; background: rgba(255,255,255,.45); transition: width .2s ease, background .2s ease; }
+.slide-dot[aria-current="true"] { width: 3.2rem; background: #d7e66b; }
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity .65s ease, transform .65s ease; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+.focus-card { transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+.focus-card:hover { transform: translateY(-5px); border-color: #1b8b87; box-shadow: 0 20px 55px rgba(16,43,58,.08); }
+.field { width: 100%; border: 1px solid #cbd4d5; background: white; padding: .85rem 1rem; color: #102b3a; border-radius: 0; }
+.field:focus { outline: 2px solid #1b8b87; outline-offset: 1px; border-color: #1b8b87; }
+.field[aria-invalid="true"] { border-color: #b42318; }
+.form-error { color: #b42318; font-size: .82rem; margin-top: .35rem; }
+.skip-link { position: absolute; left: 1rem; top: -5rem; z-index: 100; background: white; color: #102b3a; padding: .8rem 1rem; }
+.skip-link:focus { top: 1rem; }
+.pattern-grid { background-image: linear-gradient(rgba(20,91,120,.055) 1px, transparent 1px), linear-gradient(90deg, rgba(20,91,120,.055) 1px, transparent 1px); background-size: 28px 28px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .reveal { opacity: 1; transform: none; }
+}
