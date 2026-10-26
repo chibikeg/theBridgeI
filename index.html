@@ -673,7 +673,7 @@
     class="fixed bottom-5 right-5 z-40 hidden h-12 w-12 border border-white/20 bg-bridge-ink text-xl text-white shadow-lg hover:bg-bridge-teal"
     aria-label="Back to top">↑</button>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script src="./config.local.js"></script>
+  <script src="./config.local.js" onerror="console.info('config.local.js not found — using environment defaults.')"></script>
   <script src="./form-handler.js" defer></script>
   <script src="./src/main.js" defer></script>
 </body>
