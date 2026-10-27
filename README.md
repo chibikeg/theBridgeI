@@ -1,12 +1,35 @@
 # The Bridge Initiative — Official Website
 
-A responsive static organizational website built with HTML5, Tailwind CSS 4.3, and vanilla JavaScript. It is not a web app and has no backend, database, authentication, or form persistence.
+A responsive, multi-page static organizational website built with HTML5, Tailwind CSS 4.3, and vanilla JavaScript. It is not a web app and has no backend, database, or authentication. Form submissions are handled via a Google Apps Script web app (Google Sheets) for community and volunteer forms, and via EmailJS for the contact form.
 
 ## Requirements
 
 - Node.js 20+ recommended
 - npm
 - Internet access during development if using Google Fonts and the current remote photography URLs
+
+## Pages
+
+- `index.html` — Home (hero carousel, about preview, focus areas, impact, conference, get involved, stories, contact, privacy)
+- `about.html` — About Us (who we are, story, mission/vision/values, communities we serve, leadership)
+- `work.html` — Our Work (approach, programmes, participation pathways)
+- `impact.html` — Our Impact (measured outcomes, project highlights, community stories, milestones)
+- `conference.html` — Digital for Impact 1.0 (hero, countdown, overview, objectives, audience, topics, speakers, programme, FAQ, partners)
+- `join.html` — Join Our Community (community interest form → Google Sheets)
+- `volunteer.html` — Volunteer (roles, process, volunteer interest form → Google Sheets, FAQ)
+- `news.html` — News & Updates (featured article, grid, empty state)
+- `contact.html` — Contact Us (contact details, contact form → EmailJS, privacy)
+
+## Shared assets
+
+- `src/input.css` — Tailwind source with brand tokens and component styles
+- `src/output.css` — Generated stylesheet (run `npm run build:css`)
+- `src/main.js` — Homepage interactions (carousel, mobile nav, reveal, back-to-top)
+- `src/page.js` — Shared script for all inner pages (mobile nav, active nav state, reveal, back-to-top, FAQ accordion, countdown)
+- `form-handler.js` — Form submission logic (Google Sheets + EmailJS)
+- `config.local.js` — EmailJS credentials (git-ignored; see `config.example.js`)
+- `scripts/generate-config.js` — Vercel build step to generate `config.local.js` from env vars
+- `google-sheet-apps-script.js` — Apps Script code to paste into your Google Apps Script project
 
 ## Run locally
 

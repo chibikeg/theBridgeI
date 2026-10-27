@@ -46,7 +46,7 @@
       description:
         "A gathering to explore how emerging technologies can help us build, collaborate and create meaningful impact.",
       cta: "Explore the Conference",
-      href: "#conference",
+      href: "conference.html",
     },
     {
       kicker: "The Bridge Initiative · Our purpose",
@@ -55,7 +55,7 @@
       description:
         "We create room for conversations about purpose, learning, relationships, culture and the future we can build together.",
       cta: "Discover Our Story",
-      href: "#about",
+      href: "about.html",
     },
     {
       kicker: "Community · Participation · Action",
@@ -64,7 +64,7 @@
       description:
         "Join a community of people who want to learn, contribute and help create meaningful change around them.",
       cta: "Join Our Community",
-      href: "#join",
+      href: "join.html",
     },
   ];
   const carousel = document.querySelector("#hero-carousel");
