@@ -93,7 +93,7 @@
   /* ── Countdown timer ─────────────────────────────────────────────────── */
   const countdownEl = document.querySelector("#conference-countdown");
   if (countdownEl) {
-    const target = new Date("2026-11-21T11:00:00+01:00").getTime();
+    const target = new Date("2026-11-21T09:00:00+01:00").getTime();
     const daysEl  = countdownEl.querySelector("[data-cd-days]");
     const hrsEl   = countdownEl.querySelector("[data-cd-hours]");
     const minsEl  = countdownEl.querySelector("[data-cd-minutes]");
